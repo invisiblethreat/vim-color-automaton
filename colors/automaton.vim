@@ -9,6 +9,18 @@ if version > 580
 endif
 let g:colors_name="automaton"
 
+
+let s:base03      = "234"
+let s:base02      = "235"
+let s:base01      = "239"
+let s:base00      = "240"
+let s:base0       = "244"
+let s:base1       = "245"
+let s:base2       = "187"
+let s:base3       = "230"
+exe "hi! LineNr"         .s:fmt_none   .s:fg_base01 .s:bg_base02
+"hi LineNr ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
+
 hi SpecialKey ctermfg=240 guifg=#585858
 hi NonText ctermfg=250 guifg=#bcbcbc
 hi Directory ctermfg=149 gui=bold guifg=#afd75f
@@ -17,7 +29,6 @@ hi IncSearch term=reverse ctermfg=186 ctermbg=0 guifg=#d7d787 guibg=#000000
 hi Search term=reverse ctermfg=15 ctermbg=66 guifg=#ffffff guibg=#455354
 hi MoreMsg ctermfg=228 guifg=#ffff87
 hi ModeMsg ctermfg=228 guifg=#ffff87
-hi LineNr ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 hi Question term=standout ctermfg=81 guifg=#5fd7ff
 hi StatusLine term=reverse ctermfg=66 guifg=#5f8787
 hi StatusLineNC term=reverse ctermfg=8 ctermbg=232 guifg=#7f7f7f guibg=#080808
