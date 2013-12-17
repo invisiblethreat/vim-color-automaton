@@ -1,15 +1,16 @@
 "Automaton - based off of skittles_berry
 
-set background=dark
+"set background=dark
 if version > 580
     hi clear
     if exists("syntax_on")
         syntax reset
     endif
 endif
+
 let g:colors_name="automaton"
 
-
+let s:vmode       = "cterm"
 let s:base03      = "234"
 let s:base02      = "235"
 let s:base01      = "239"
@@ -18,8 +19,6 @@ let s:base0       = "244"
 let s:base1       = "245"
 let s:base2       = "187"
 let s:base3       = "230"
-exe "hi! LineNr"         .s:fmt_none   .s:fg_base01 .s:bg_base02
-"hi LineNr ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 
 hi SpecialKey ctermfg=240 guifg=#585858
 hi NonText ctermfg=250 guifg=#bcbcbc
@@ -100,3 +99,4 @@ hi Normal ctermfg=230 ctermbg=233 guifg=#ffffd7 guibg=#121212
 hi Identifier cterm=none term=none ctermfg=228 guifg=#ffff87
 hi clear Cursor
 hi Cursor ctermbg=26 ctermfg=7 guifg=#e5e5e5 guibg=#005fd7
+hi LineNr cterm=none ctermfg=239 ctermbg=235 guifg=239 guibg=235
