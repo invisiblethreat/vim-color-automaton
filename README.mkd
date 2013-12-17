@@ -1,0 +1,25 @@
+Automaton Colorscheme for Vim
+=============================
+
+Developed by Scott Walsh.
+
+
+Installation
+------------
+
+I'd highly recommend taking the time to learn how to use [Vundle] or [Pathogen] for installs
+like this it makes your life so much easier. Honest!
+
+### Via Vundle(because that's what I use)
+
+1.  Edit your .vimrc to include the following:
+        Bundle 'invisiblethreat/vim-color-automaton'
+        colorscheme automaton
+
+2.  Run the following from the command line:
+        vim +BundleInstall +qall
+
+3.  Enjoy.
+
+[Pathogen]:             https://github.com/tpope/vim-pathogen
+[Vundle]:               https://github.com/gmarik/vundle
