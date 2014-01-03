@@ -1,5 +1,5 @@
 "Automaton - based off of skittles_berry
-"
+"          - syntax based on Solarized
 "http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html
 "
 set background=dark
@@ -47,6 +47,7 @@ exe "let s:fg_lime        = ' ".s:vmode."fg=".s:lime ."'"
 exe "let s:fg_orange      = ' ".s:vmode."fg=".s:orange ."'"
 exe "let s:fg_mustard     = ' ".s:vmode."fg=".s:mustard ."'"
 exe "let s:fg_blue        = ' ".s:vmode."fg=".s:blue ."'"
+exe "let s:fg_yellow      = ' ".s:vmode."fg=".s:yellow ."'"
 
 "background colours
 exe "let s:bg_base02      = ' ".s:vmode."bg=".s:base02 ."'"
@@ -61,22 +62,21 @@ exe "hi! Identifier"     .s:fmt_none  .s:fg_cyan
 exe "hi! LineNr"         .s:fmt_none  .s:fg_base01    .s:bg_base02
 exe "hi! Number"         .s:fmt_none  .s:fg_magenta
 exe "hi! Operator"       .s:fmt_none  .s:fg_mustard
-exe "hi! Special"        .s:fmt_none  .s:fg_magenta
+exe "hi! Special"        .s:fmt_none  .s:fg_blue
 "hi Special ctermfg=81 guifg=#5fd7ff
 exe "hi! SpellBad"       .s:fmt_none  .s:fg_white     .s:bg_red
 exe "hi! SpellLocal"     .s:fmt_none  .s:fg_white     .s:bg_red
 exe "hi! Statement"      .s:fmt_none  .s:fg_dk_orange
 exe "hi! String"         .s:fmt_none  .s:fg_lime
 exe "hi! Type"           .s:fmt_none  .s:fg_blue
-"hi Type ctermfg=81 guifg=#5fd7ff
 exe "hi! Visual"         .s:fmt_none  .s:fg_white     .s:bg_cyan
+exe "hi! Conditional"    .s:fmt_none  .s:fg_magenta
 
 
 hi Boolean ctermfg=93 guifg=#8700af
 hi Character ctermfg=228 guifg=#ffff87
 hi Comment ctermfg=66 guifg=#5f8787
 hi Conceal ctermfg=7 ctermbg=242 guifg=#e5e5e5 guibg=#080808
-hi Conditional ctermfg=124 gui=bold guifg=#af0000
 hi Constant ctermfg=99 guifg=#8700af
 hi Cursor ctermbg=26 ctermfg=7 guifg=#e5e5e5 guibg=#005fd7
 hi CursorColumn cterm=none term=none ctermbg=235 guibg=#262626
